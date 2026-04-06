@@ -1,0 +1,121 @@
+[
+    {
+        "magic": "4D5A",
+        "offset": 0,
+        "format": "PE",
+        "description": "Windows PE Executable",
+        "mime_type": "application/vnd.microsoft.portable-executable"
+    },
+    {
+        "magic": "7F454C46",
+        "offset": 0,
+        "format": "ELF",
+        "description": "ELF Executable",
+        "mime_type": "application/x-elf"
+    },
+    {
+        "magic": "FEEDFACE",
+        "offset": 0,
+        "format": "Mach-O",
+        "description": "Mach-O Executable (32-bit)",
+        "mime_type": "application/x-mach-binary"
+    },
+    {
+        "magic": "FEEDFACF",
+        "offset": 0,
+        "format": "Mach-O 64",
+        "description": "Mach-O Executable (64-bit)",
+        "mime_type": "application/x-mach-binary"
+    },
+    {
+        "magic": "504B0304",
+        "offset": 0,
+        "format": "ZIP",
+        "description": "ZIP Archive",
+        "mime_type": "application/zip"
+    },
+    {
+        "magic": "526172211A0700",
+        "offset": 0,
+        "format": "RAR",
+        "description": "RAR Archive (v4)",
+        "mime_type": "application/x-rar-compressed"
+    },
+    {
+        "magic": "377ABCAF271C",
+        "offset": 0,
+        "format": "7z",
+        "description": "7-Zip Archive",
+        "mime_type": "application/x-7z-compressed"
+    },
+    {
+        "magic": "25504446",
+        "offset": 0,
+        "format": "PDF",
+        "description": "PDF Document",
+        "mime_type": "application/pdf"
+    },
+    {
+        "magic": "89504E47",
+        "offset": 0,
+        "format": "PNG",
+        "description": "PNG Image",
+        "mime_type": "image/png"
+    },
+    {
+        "magic": "FFD8FF",
+        "offset": 0,
+        "format": "JPEG",
+        "description": "JPEG Image",
+        "mime_type": "image/jpeg"
+    },
+    {
+        "magic": "1F8B",
+        "offset": 0,
+        "format": "GZIP",
+        "description": "GZIP Compressed",
+        "mime_type": "application/gzip"
+    },
+    {
+        "magic": "FD377A585A00",
+        "offset": 0,
+        "format": "XZ",
+        "description": "XZ Compressed",
+        "mime_type": "application/x-xz"
+    },
+    {
+        "magic": "4D534346",
+        "offset": 0,
+        "format": "CAB",
+        "description": "Microsoft Cabinet Archive",
+        "mime_type": "application/vnd.ms-cab-compressed"
+    },
+    {
+        "magic": "D0CF11E0A1B11AE1",
+        "offset": 0,
+        "format": "CFBF",
+        "description": "Compound File Binary Format (MS Office OLE)",
+        "mime_type": "application/x-cfb"
+    },
+    {
+        "magic": "6465780A",
+        "offset": 0,
+        "format": "DEX",
+        "description": "Android Dalvik Executable",
+        "mime_type": "application/x-dex"
+    },
+    {
+        "magic": "0061736D",
+        "offset": 0,
+        "format": "WASM",
+        "description": "WebAssembly Binary",
+        "mime_type": "application/wasm"
+    },
+    {
+        "magic": "53514C69746520666F726D61742033",
+        "offset": 0,
+        "format": "SQLite",
+        "description": "SQLite 3 Database",
+        "mime_type": "application/x-sqlite3"
+    }
+]

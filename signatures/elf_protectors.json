@@ -1,0 +1,30 @@
+[
+    {
+        "name": "UPX (modified)",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "UPX!"},
+            {"value": "$Info: This file is packed with the UPX"}
+        ]
+    },
+    {
+        "name": "Obsidium for Linux",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Obsidium"}
+        ]
+    },
+    {
+        "name": "Morpheus ELF Encryptor",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Morpheus"}
+        ]
+    }
+]

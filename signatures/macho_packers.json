@@ -1,0 +1,22 @@
+[
+    {
+        "name": "UPX",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.95,
+        "strings": [
+            {"value": "UPX!"},
+            {"value": "This file is packed with the UPX"}
+        ]
+    },
+    {
+        "name": "PyInstaller",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PyInstaller"},
+            {"value": "pyi-runtime"}
+        ]
+    }
+]

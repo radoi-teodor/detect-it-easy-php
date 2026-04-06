@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Microsoft Linker",
+        "version": "",
+        "category": "linker",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "Microsoft Linker"},
+            {"value": "Microsoft (R) Incremental Linker"}
+        ]
+    },
+    {
+        "name": "GNU ld",
+        "version": "",
+        "category": "linker",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "GNU ld"},
+            {"value": "ld.bfd"}
+        ]
+    },
+    {
+        "name": "LLD (LLVM Linker)",
+        "version": "",
+        "category": "linker",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "lld-link"},
+            {"value": "Linker Version"}
+        ]
+    },
+    {
+        "name": "Turbo Linker",
+        "version": "",
+        "category": "linker",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Turbo Linker"}
+        ]
+    },
+    {
+        "name": "Watcom Linker",
+        "version": "",
+        "category": "linker",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "WATCOM"}
+        ]
+    }
+]

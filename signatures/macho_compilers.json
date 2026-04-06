@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Apple Clang/LLVM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Apple clang version"},
+            {"value": "Apple LLVM version"}
+        ]
+    },
+    {
+        "name": "Clang/LLVM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "clang version"}
+        ]
+    },
+    {
+        "name": "Apple Swift",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "libswiftCore"},
+            {"value": "__swift5"}
+        ]
+    },
+    {
+        "name": "Objective-C",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "objc_msgSend"},
+            {"value": "__objc_classname"}
+        ]
+    },
+    {
+        "name": "Go (Golang)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Go build ID:"},
+            {"value": "runtime.main"}
+        ]
+    },
+    {
+        "name": "Rust",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "/rustc/"},
+            {"value": "rust_begin_unwind"}
+        ]
+    },
+    {
+        "name": "GCC",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "GCC: (GNU)"},
+            {"value": "GCC:"}
+        ]
+    }
+]

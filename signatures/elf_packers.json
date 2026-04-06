@@ -1,0 +1,54 @@
+[
+    {
+        "name": "UPX",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.95,
+        "strings": [
+            {"value": "UPX!"},
+            {"value": "This file is packed with the UPX"},
+            {"value": "$Info: This file is packed with the UPX"}
+        ]
+    },
+    {
+        "name": "Shiva",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "shiva"}
+        ]
+    },
+    {
+        "name": "ELFCrypt",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "ELFCrypt"}
+        ]
+    },
+    {
+        "name": "Burneye",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "TEEE"}
+        ],
+        "hex_patterns": [
+            {"bytes": "7F 45 4C 46 01 01 01 00 42 55 52 4E", "offset": 0}
+        ]
+    },
+    {
+        "name": "PyInstaller",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PyInstaller"},
+            {"value": "pyi-runtime"},
+            {"value": "MEI"}
+        ]
+    }
+]

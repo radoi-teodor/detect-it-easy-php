@@ -1,0 +1,165 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * DetectItEasy-PHP CLI tool.
+ *
+ * Usage:
+ *   php die-php <file> [options]
+ *   php die-php <file> --json
+ *   php die-php <file> --quick
+ *   php die-php <directory> --batch
+ */
+
+// Autoloader resolution
+$autoloadPaths = [
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+];
+
+$autoloaded = false;
+foreach ($autoloadPaths as $path) {
+    if (file_exists($path)) {
+        require $path;
+        $autoloaded = true;
+        break;
+    }
+}
+
+if (!$autoloaded) {
+    // Fallback: manual PSR-4 autoloader
+    spl_autoload_register(function (string $class): void {
+        $prefix = 'DetectItEasy\\';
+        if (strpos($class, $prefix) !== 0) {
+            return;
+        }
+        $relative = substr($class, strlen($prefix));
+        $file = __DIR__ . '/../src/' . str_replace('\\', '/', $relative) . '.php';
+        if (file_exists($file)) {
+            require $file;
+        }
+    });
+}
+
+use DetectItEasy\DetectItEasy;
+
+// ---- CLI argument parsing ----
+
+$args = array_slice($argv, 1);
+$options = [
+    'json' => false,
+    'quick' => false,
+    'batch' => false,
+    'no-entropy' => false,
+    'help' => false,
+];
+$files = [];
+
+foreach ($args as $arg) {
+    if ($arg === '--json' || $arg === '-j') {
+        $options['json'] = true;
+    } elseif ($arg === '--quick' || $arg === '-q') {
+        $options['quick'] = true;
+    } elseif ($arg === '--batch' || $arg === '-b') {
+        $options['batch'] = true;
+    } elseif ($arg === '--no-entropy') {
+        $options['no-entropy'] = true;
+    } elseif ($arg === '--help' || $arg === '-h') {
+        $options['help'] = true;
+    } elseif ($arg[0] !== '-') {
+        $files[] = $arg;
+    }
+}
+
+if ($options['help'] || empty($files)) {
+    echo <<<HELP
+DetectItEasy-PHP - Universal File Type Detection Tool
+
+Usage:
+  php die-php <file> [options]
+  php die-php <directory> --batch [options]
+
+Options:
+  -j, --json        Output results as JSON
+  -q, --quick       Quick scan (format only, no deep analysis)
+  -b, --batch       Batch scan all files in directory
+      --no-entropy  Skip entropy analysis
+  -h, --help        Show this help message
+
+Examples:
+  php die-php malware.exe
+  php die-php suspicious.bin --json
+  php die-php /samples/ --batch --json
+
+HELP;
+    exit($options['help'] ? 0 : 1);
+}
+
+// ---- Run analysis ----
+
+$die = new DetectItEasy([
+    'entropy_analysis' => !$options['no-entropy'],
+]);
+
+$targetFiles = [];
+
+foreach ($files as $file) {
+    if (is_dir($file)) {
+        if ($options['batch']) {
+            $iterator = new RecursiveIteratorIterator(
+                new RecursiveDirectoryIterator($file, RecursiveDirectoryIterator::SKIP_DOTS)
+            );
+            foreach ($iterator as $entry) {
+                if ($entry->isFile()) {
+                    $targetFiles[] = $entry->getPathname();
+                }
+            }
+        } else {
+            fwrite(STDERR, "Error: '{$file}' is a directory. Use --batch to scan directories.\n");
+            exit(1);
+        }
+    } else {
+        $targetFiles[] = $file;
+    }
+}
+
+if (empty($targetFiles)) {
+    fwrite(STDERR, "No files to analyze.\n");
+    exit(1);
+}
+
+$results = [];
+
+foreach ($targetFiles as $targetFile) {
+    try {
+        if ($options['quick']) {
+            $result = $die->quickScan($targetFile);
+        } else {
+            $result = $die->analyze($targetFile);
+        }
+        $results[] = $result;
+    } catch (\Exception $e) {
+        fwrite(STDERR, "Error analyzing '{$targetFile}': {$e->getMessage()}\n");
+    }
+}
+
+// ---- Output ----
+
+if ($options['json']) {
+    $output = array_map(function ($r) {
+        return $r->toArray();
+    }, $results);
+
+    if (count($output) === 1) {
+        echo json_encode($output[0], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n";
+    } else {
+        echo json_encode($output, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n";
+    }
+} else {
+    foreach ($results as $i => $result) {
+        if ($i > 0) {
+            echo str_repeat('-', 60) . "\n";
+        }
+        echo $result->getSummary() . "\n";
+    }
+}

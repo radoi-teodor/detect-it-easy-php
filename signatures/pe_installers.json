@@ -1,0 +1,86 @@
+[
+    {
+        "name": "NSIS (Nullsoft Scriptable Install System)",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Nullsoft.NSIS"},
+            {"value": "NSIS Error"},
+            {"value": ".ndata"},
+            {"value": "NullsoftInst"}
+        ]
+    },
+    {
+        "name": "Inno Setup",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Inno Setup"},
+            {"value": "InnoSetupLdr"},
+            {"value": "Inno Setup Setup Data"}
+        ]
+    },
+    {
+        "name": "InstallShield",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "InstallShield"},
+            {"value": "Flexera Software"}
+        ]
+    },
+    {
+        "name": "WiX Toolset",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Windows Installer XML"},
+            {"value": "WiX Toolset"},
+            {"value": "WixUI_"},
+            {"value": "WixCA"}
+        ]
+    },
+    {
+        "name": "Advanced Installer",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Advanced Installer"},
+            {"value": "Caphyon"}
+        ]
+    },
+    {
+        "name": "Setup Factory",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Setup Factory"},
+            {"value": "Indigo Rose"}
+        ]
+    },
+    {
+        "name": "Wise Installation System",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Wise Installation"}
+        ]
+    },
+    {
+        "name": "Electron Builder",
+        "version": "",
+        "category": "installer",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "electron-builder"},
+            {"value": "Squirrel"}
+        ]
+    }
+]

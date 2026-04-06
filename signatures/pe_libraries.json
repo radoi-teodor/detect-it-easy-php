@@ -1,0 +1,106 @@
+[
+    {
+        "name": "OpenSSL",
+        "version": "",
+        "category": "library",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "OpenSSL"},
+            {"value": "libssl"},
+            {"value": "libcrypto"}
+        ]
+    },
+    {
+        "name": "zlib",
+        "version": "",
+        "category": "library",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "deflate 1."},
+            {"value": "inflate 1."},
+            {"value": "zlib"}
+        ]
+    },
+    {
+        "name": "Qt Framework",
+        "version": "",
+        "category": "library",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Qt5Core.dll"},
+            {"value": "Qt6Core.dll"},
+            {"value": "QtCore4.dll"}
+        ]
+    },
+    {
+        "name": "wxWidgets",
+        "version": "",
+        "category": "library",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "wxWidgets"},
+            {"value": "wxmsw"}
+        ]
+    },
+    {
+        "name": "SDL (Simple DirectMedia Layer)",
+        "version": "",
+        "category": "library",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "SDL2.dll"},
+            {"value": "SDL.dll"}
+        ]
+    },
+    {
+        "name": "DirectX",
+        "version": "",
+        "category": "library",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "d3d9.dll"},
+            {"value": "d3d11.dll"},
+            {"value": "d3d12.dll"},
+            {"value": "dxgi.dll"}
+        ]
+    },
+    {
+        "name": "OpenGL",
+        "version": "",
+        "category": "library",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "opengl32.dll"},
+            {"value": "glew32.dll"}
+        ]
+    },
+    {
+        "name": "Vulkan",
+        "version": "",
+        "category": "library",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "vulkan-1.dll"}
+        ]
+    },
+    {
+        "name": "Boost",
+        "version": "",
+        "category": "library",
+        "confidence": 0.75,
+        "strings": [
+            {"value": "boost::"},
+            {"value": "boost_"}
+        ]
+    },
+    {
+        "name": "curl / libcurl",
+        "version": "",
+        "category": "library",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "libcurl"},
+            {"value": "curl_easy_"}
+        ]
+    }
+]

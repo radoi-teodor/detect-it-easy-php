@@ -1,0 +1,125 @@
+[
+    {
+        "name": "GCC",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "GCC: (GNU)"},
+            {"value": "GCC: (Ubuntu"},
+            {"value": "GCC: (Debian"},
+            {"value": "GCC: (Alpine"},
+            {"value": "GCC: (Red Hat"}
+        ]
+    },
+    {
+        "name": "Clang/LLVM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "clang version"},
+            {"value": "Clang"}
+        ]
+    },
+    {
+        "name": "Go (Golang)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Go build ID:"},
+            {"value": "runtime.main"},
+            {"value": "runtime.goexit"}
+        ]
+    },
+    {
+        "name": "Rust (rustc)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "/rustc/"},
+            {"value": "rust_begin_unwind"},
+            {"value": "rust_panic"}
+        ]
+    },
+    {
+        "name": "Intel C++ Compiler",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Intel(R) C++"},
+            {"value": "Intel Corporation"}
+        ]
+    },
+    {
+        "name": "Free Pascal",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "FPC "},
+            {"value": "Free Pascal"}
+        ]
+    },
+    {
+        "name": "Nim",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "@mnim"},
+            {"value": "nim_program_result"}
+        ]
+    },
+    {
+        "name": "Zig",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "zig_backend"}
+        ]
+    },
+    {
+        "name": "D (DMD)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "_Dmain"},
+            {"value": "druntime"}
+        ]
+    },
+    {
+        "name": "OCaml",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "caml_startup"},
+            {"value": "OCaml"}
+        ]
+    },
+    {
+        "name": "Haskell (GHC)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "GHC "},
+            {"value": "hs_init"}
+        ]
+    },
+    {
+        "name": "Crystal",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "__crystal_main"}
+        ]
+    }
+]

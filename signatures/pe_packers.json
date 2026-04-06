@@ -1,0 +1,189 @@
+[
+    {
+        "name": "UPX",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.95,
+        "strings": [
+            {"value": "UPX0"},
+            {"value": "UPX1"},
+            {"value": "UPX!"},
+            {"value": "This file is packed with the UPX"}
+        ]
+    },
+    {
+        "name": "ASPack",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".aspack"},
+            {"value": ".adata"}
+        ]
+    },
+    {
+        "name": "PECompact",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PEC2"},
+            {"value": "PECompact2"}
+        ]
+    },
+    {
+        "name": "FSG",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "hex_patterns": [
+            {"bytes": "87 25 ?? ?? ?? ?? 61 94 55 A4 B6 80 FF 13", "offset": null}
+        ]
+    },
+    {
+        "name": "MPRESS",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".MPRESS1"},
+            {"value": ".MPRESS2"}
+        ]
+    },
+    {
+        "name": "Petite",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".petite"},
+            {"value": "Petite"}
+        ]
+    },
+    {
+        "name": "MEW",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "MEW 10"},
+            {"value": "MEW 11"},
+            {"value": ".mew0"},
+            {"value": ".mew1"}
+        ]
+    },
+    {
+        "name": "NSPack",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "nsPacK"},
+            {"value": "NSPack "},
+            {"value": "NsPack"}
+        ]
+    },
+    {
+        "name": "RLPack",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".RLPack"}
+        ]
+    },
+    {
+        "name": "BeRoEXEPacker",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "BeRoEXEPacker"}
+        ]
+    },
+    {
+        "name": "Upack",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "hex_patterns": [
+            {"bytes": "0B 01 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 00 10", "offset": null}
+        ]
+    },
+    {
+        "name": "kkrunchy",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "kkrunchy"}
+        ]
+    },
+    {
+        "name": "PyInstaller",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PyInstaller"},
+            {"value": "pyi-runtime"},
+            {"value": "MEI"}
+        ]
+    },
+    {
+        "name": "cx_Freeze",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "cx_Freeze"}
+        ]
+    },
+    {
+        "name": "py2exe",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PY2EXE_VERBOSE"},
+            {"value": "py2exe"}
+        ]
+    },
+    {
+        "name": "Enigma Virtual Box",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Enigma Virtual Box"},
+            {"value": "enigmavb"}
+        ]
+    },
+    {
+        "name": "BoxedApp Packer",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "BoxedApp"}
+        ]
+    },
+    {
+        "name": "exe32pack",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "exe32pack"}
+        ]
+    },
+    {
+        "name": "Molebox",
+        "version": "",
+        "category": "packer",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Molebox"}
+        ]
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "name": "Microsoft Visual C++",
+        "version": "2022",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "VCRUNTIME140.dll"},
+            {"value": "vcruntime140.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++",
+        "version": "2019",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "VCRUNTIME140.dll"},
+            {"value": "MSVCP140.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++ 6.0",
+        "version": "6.0",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "MSVCRT.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++ 2008",
+        "version": "2008",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "MSVCR90.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++ 2010",
+        "version": "2010",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "MSVCR100.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++ 2012",
+        "version": "2012",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "MSVCR110.dll"}
+        ]
+    },
+    {
+        "name": "Microsoft Visual C++ 2013",
+        "version": "2013",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "MSVCR120.dll"}
+        ]
+    },
+    {
+        "name": "MinGW/GCC",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "GCC: (GNU)"},
+            {"value": "GCC: (MinGW"},
+            {"value": "GCC: (Rev"},
+            {"value": "GCC: (tdm"}
+        ]
+    },
+    {
+        "name": "Borland Delphi",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Borland C++ - Copyright"},
+            {"value": "This program must be run under Win32"}
+        ]
+    },
+    {
+        "name": "Borland Delphi 7",
+        "version": "7",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Borland Delphi 7"}
+        ]
+    },
+    {
+        "name": "Free Pascal",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "FPC "},
+            {"value": "Free Pascal"}
+        ]
+    },
+    {
+        "name": "Lazarus",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Lazarus"}
+        ]
+    },
+    {
+        "name": "AutoIt",
+        "version": "3",
+        "category": "compiler",
+        "confidence": 0.95,
+        "strings": [
+            {"value": ">>>AUTOIT SCRIPT<<<"},
+            {"value": "AU3!EA06"}
+        ]
+    },
+    {
+        "name": "AutoHotkey",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "AutoHotkey"}
+        ]
+    },
+    {
+        "name": "FASM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "flat assembler"}
+        ]
+    },
+    {
+        "name": "NASM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "The Netwide Assembler"}
+        ]
+    },
+    {
+        "name": "MASM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "hex_patterns": [
+            {"bytes": "4D 69 63 72 6F 73 6F 66 74 20 28 52 29 20 4D 61 63 72 6F 20 41 73 73 65 6D 62 6C 65 72", "offset": null}
+        ]
+    },
+    {
+        "name": "Rust",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "/rustc/"},
+            {"value": "rust_begin_unwind"}
+        ]
+    },
+    {
+        "name": "Go (Golang)",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Go build ID:"},
+            {"value": "runtime.main"}
+        ]
+    },
+    {
+        "name": "Nim",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "@mnim"},
+            {"value": "nim_program_result"}
+        ]
+    },
+    {
+        "name": "Zig",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.8,
+        "strings": [
+            {"value": "zig_backend"}
+        ]
+    },
+    {
+        "name": "Clang/LLVM",
+        "version": "",
+        "category": "compiler",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "clang version"},
+            {"value": "Clang"}
+        ]
+    }
+]

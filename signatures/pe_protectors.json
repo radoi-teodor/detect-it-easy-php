@@ -1,0 +1,199 @@
+[
+    {
+        "name": "Themida",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".themida"},
+            {"value": "Themida"}
+        ]
+    },
+    {
+        "name": "WinLicense",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".winlice"},
+            {"value": "WinLicense"}
+        ]
+    },
+    {
+        "name": "VMProtect",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.95,
+        "strings": [
+            {"value": ".vmp0"},
+            {"value": ".vmp1"},
+            {"value": ".vmp2"},
+            {"value": "VMProtect"}
+        ]
+    },
+    {
+        "name": "Armadillo",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Armadillo"},
+            {"value": "Silicon Realms"}
+        ]
+    },
+    {
+        "name": "Enigma Protector",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".enigma1"},
+            {"value": ".enigma2"},
+            {"value": "Enigma protector"}
+        ]
+    },
+    {
+        "name": "EXECryptor",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "EXECryptor"}
+        ]
+    },
+    {
+        "name": "Code Virtualizer",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "Code Virtualizer"},
+            {"value": "Oreans Technologies"}
+        ]
+    },
+    {
+        "name": "ASProtect",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "ASProtect"}
+        ]
+    },
+    {
+        "name": "Obsidium",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Obsidium"}
+        ]
+    },
+    {
+        "name": "PELock",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "PELock"}
+        ]
+    },
+    {
+        "name": "SafeDisc",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "BoG_ *90.0"},
+            {"value": "stxt774"},
+            {"value": "SafeDisc"}
+        ]
+    },
+    {
+        "name": "SecuROM",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "SecuROM"},
+            {"value": "Sony DADC"}
+        ]
+    },
+    {
+        "name": "StarForce",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "StarForce"},
+            {"value": ".sforce"}
+        ]
+    },
+    {
+        "name": "Denuvo",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "denuvo"}
+        ]
+    },
+    {
+        "name": ".NET Reactor",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": ".NET Reactor"},
+            {"value": "Eziriz"}
+        ]
+    },
+    {
+        "name": "ConfuserEx",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.9,
+        "strings": [
+            {"value": "ConfuserEx"}
+        ]
+    },
+    {
+        "name": "Dotfuscator",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Dotfuscator"},
+            {"value": "PreEmptive"}
+        ]
+    },
+    {
+        "name": "Smart Assembly",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "SmartAssembly"},
+            {"value": "RedGate"}
+        ]
+    },
+    {
+        "name": "Crypto Obfuscator",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Crypto Obfuscator"}
+        ]
+    },
+    {
+        "name": "Agile.NET",
+        "version": "",
+        "category": "protector",
+        "confidence": 0.85,
+        "strings": [
+            {"value": "Agile.NET"},
+            {"value": "CliSecure"}
+        ]
+    }
+]
