@@ -33,7 +33,7 @@ No external dependencies required.
 ### Via Composer
 
 ```bash
-composer require edimemune/detect-it-easy-php
+composer require radoi-teodor/detect-it-easy-php
 ```
 
 ### Manual Installation
@@ -41,7 +41,7 @@ composer require edimemune/detect-it-easy-php
 Clone or download the repository:
 
 ```bash
-git clone https://github.com/edimemune/detect-it-easy-php.git
+git clone https://github.com/radoi-teodor/detect-it-easy-php.git
 cd detect-it-easy-php
 composer install
 ```

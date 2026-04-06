@@ -1,5 +1,5 @@
 {
-    "name": "edimemune/detect-it-easy-php",
+    "name": "radoi-teodor/detect-it-easy-php",
     "description": "A powerful file type detection and analysis library for cybersecurity experts and reverse engineers. Identifies executables, archives, packers, compilers, protectors, and more.",
     "type": "library",
     "license": "MIT",
